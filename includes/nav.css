@@ -1,0 +1,220 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Boldonse&family=Bruno+Ace&family=Indie+Flower&family=Pacifico&display=swap');
+
+#card_bods {
+    display: flex;
+}
+
+.card_body {
+    position: relative;
+    width: 25%;
+    height: auto;
+    aspect-ratio: 25 / 21;
+    min-height: 0;
+    background-color: #ffffff;
+    margin: 0;
+    border: solid #bbc1c9 0.5px;
+    border-top: none;
+    border-bottom: none;
+    z-index: -1;
+    text-align: center;
+    transition: 0.5S;
+}
+
+nav { 
+    position: sticky;
+    top: 0;
+    z-index: 20;
+}
+
+#card_hds {
+    display: flex;
+}
+
+.nav_tg {
+    margin: 0;
+    display: flex;
+    justify-content: space-evenly;
+    border: solid #bbc1c9 0.5px;
+    border-top: none;
+    border-radius: 0 0 25px 25px;
+    width: 25%;
+    height: auto;
+    aspect-ratio: 25 / 7;
+    min-height: 0;
+    align-self: flex-start;
+    background-color: #ffffff;
+    box-shadow: -1px 30px 40px -4px #000000;
+    transition: 0.5s;
+}
+
+.nav_tg:hover {
+    transform: scale(1.1);
+    box-shadow: 0 15px 30px -8px  #000000; 
+    cursor: pointer;
+}
+
+.ico, .tg {
+    height: 70%;
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    text-align: center;
+    font-family: "Boldonse", system-ui;
+    font-size: 150%;
+}
+
+.ico {
+    width: 16%;
+    transform: rotateZ(180deg);
+    transform-origin: center center;
+}
+
+.tg {
+    width: 64%;
+    padding-top: 5%;
+}
+
+
+.sym_let, .sub_ico {
+    margin: 0;
+    font-size: 100%;
+}
+
+.sub_ico {
+    line-height: 0.8;
+}
+
+#ctg, #contact {
+    color: red;
+}
+
+.main_ico {
+    display: block;
+    position: relative;
+    margin-top: 15%;
+    font-size: 1000%;
+}
+
+#ctg_body, #contact_body {
+    color: #cc0000;
+}
+
+#card_wrapper {
+    position: relative;
+}
+
+#SriAsi_title {
+    position: absolute;
+    z-index: 5;
+    width: 100%;
+    height: 100 / 21;
+    top: 0;
+}
+
+#nav_mobile {
+    display: none;
+}
+
+#nav_mobile, .ico_mobile, .tgName_mobile {
+    display: none;
+}
+
+/*mobile*/
+@media (max-width: 1050px) {
+    #card_wrapper, nav {
+        display: none;
+    }
+
+    #nav_mobile {
+        display: flex;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: 10vh;
+        justify-content: space-between;
+        background-color: #ffffff;
+        border-radius: 0 0 25px 25px;
+        box-shadow: 0 2vh 30px -20px #000000;
+        /*temp*/
+        z-index: 10;
+    }
+
+    #title_mobile {
+        height: 8vh;
+        margin-top: 1vh;
+        margin-left: 5%;
+    }
+
+    #toggle {
+        position: relative;
+        height: 5vh;
+        aspect-ratio: 1 / 1;
+        margin-top: 2.5vh;
+        text-align: center;
+        font-size: 500%;
+        margin-right: 5%;
+        transition: 0.5s;
+    }
+
+    .toggle_active {
+        transform: rotateZ(-90deg);
+    }
+
+    /*temp*/
+    .tg_mobile {
+        display: flex;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: 10vh;
+        justify-content: space-between;
+        background-color: #ffffff;
+        border-radius: 0 0 25px 25px;
+        box-shadow: 0 2vh 50px -20px #000000;
+    }
+
+    .ico_mobile, .tgName_mobile {
+        position: relative;
+        height: 3.5vh;
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        text-align: center;
+        font-family: "Boldonse", system-ui;
+        font-size: 2vh;
+        margin-top: 3vh;
+        border: #cc0000 solid 1px;
+    }
+
+    .ico_mobile {
+        margin-left: 10%;
+    }
+
+    .tgName_mobile {
+        margin-right: 10%;
+    }
+
+    #ctg_mobile, #contact_mobile {
+        color: #cc0000;
+    }
+
+    /*individulats*/
+    #home_mobile {
+        z-index: 4;
+        transition: 0.25s;
+    }
+    #ctg_mobile {
+        z-index: 3;
+        transition: 0.5s;
+    }
+    #cart_mobile {
+        z-index: 2;
+        transition: 0.75s;
+    }
+    #contact_mobile {
+        z-index: 1;
+        transition: 1s;
+    }
+}

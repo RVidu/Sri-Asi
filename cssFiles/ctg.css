@@ -1,0 +1,135 @@
+#ctg_rw_one, #ctg_rw_two {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 15vh;
+    position: relative;
+    z-index: 1;
+}
+
+#ctg_rw_two {
+    margin-bottom: 15vh;
+}
+
+#ctg_fashion, #ctg_toys, #ctg_stationery, #ctg_sweet {
+    background-color: #ffffff;
+    width: 20vw;
+    aspect-ratio: 5 / 7;
+    border-radius: 20px;
+    box-shadow: 0 0 50px 10px #000000;
+    transition: 0.5s;
+    position: relative;
+    z-index: 2;
+}
+
+@media (min-width: 1050px) {
+    #ctg_fashion:hover, #ctg_toys:hover, #ctg_stationery:hover, #ctg_sweet:hover {
+        transform: scale(1.2);
+        cursor: pointer;
+    }
+}
+
+#ctg_toys, #ctg_sweet {
+    color: red;
+}
+
+#ctg_fashion {
+    transform: rotateZ(50deg);
+}
+#ctg_toys {
+    transform: rotateZ(30deg);
+}
+#ctg_stationery {
+    transform: rotateZ(-70deg);
+}
+#ctg_sweet {
+    transform: rotateZ(45deg);
+}
+
+.top_A {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    width: 4vw;
+    font-size: 3.5vh;
+    text-align: center;
+    margin-top: 1.5vh;
+}
+
+.middle_sym {
+    height: 18vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15vh;
+    margin-top: 1vh;
+}
+
+.bottom_A {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    width: 4vw;
+    font-size: 3.5vh;
+    text-align: center;
+    margin-top: 3vh;
+    float: right;
+    transform: rotateZ(180deg);
+    transform-origin: center center;
+}
+
+.ctg_wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 20vw;
+    aspect-ratio: 1 / 2;
+}
+
+.ctg_txt {
+    margin-top: auto;
+    font-size: 5vh;
+    text-align: center;
+    color: #000000;
+    font-weight: bold;
+    -webkit-text-stroke: 0.5px #ffffff;
+}
+
+@media (max-width: 1050px) {
+    #ctg_rw_one, #ctg_rw_two {
+        flex-direction: column;
+        align-items: center;
+        gap: 10vh;
+    }
+
+    #ctg_rw_two {
+        margin-top: 10vh;
+    }
+
+    #ctg_fashion, #ctg_toys, #ctg_stationery, #ctg_sweet {
+        width: 30vw;
+    }
+
+    .top_A, .bottom_A {
+        width: 6vw;
+        margin-top: 1.5vh;
+        font-size: 1.75vh;
+    }
+
+    .middle_sym {
+        height: 9vh;
+        font-size: 7.5vh;
+        margin-top: 0.5vh;
+    }
+    
+    .ctg_wrapper {
+        width: 100%;
+        aspect-ratio: 1 / 0.6;
+        align-items: center;
+    }
+
+    .ctg_txt {
+        position: relative;
+        font-size: 4vh;
+        width: 100%;
+    }
+}

@@ -1,0 +1,68 @@
+body {
+    padding: 0;
+    margin:0;
+    background-color: #155843;
+}
+
+.ctg_names_tg {
+    display: block;
+    width: 100%;
+    height: 25px;
+    margin-top: 5vh;
+    background-color: #333333;
+    color: #ffffff;
+}
+
+#fashion_tg {
+    margin-top: 10vh;
+}
+
+.ctg_items_wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 2vh;
+}
+
+.ctg_items {
+    display: block;
+    width: 15vh;
+    aspect-ratio: 5 / 7;
+    background-color: #ffffff;
+    border-radius: 25px;
+    transition: 0.3s;
+    text-align: center;
+    box-shadow: 10px 10px 20px -4px #000000;
+}
+
+@media (min-width: 1050px) {
+    .ctg_items:hover {
+        transform: scale(1.1);
+        cursor: pointer;
+        box-shadow: 10px 10px 10px -4px #000000;
+    }
+}
+
+.item_ico {
+    display: block;
+    margin-top: 3vh;
+    font-size: 10vh;
+}
+.price {
+    display: block;
+    margin-top: 3vh;
+    font-size: 2vh;
+}
+
+@media (max-width: 1050px) {
+    .ctg_items_wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 5vh;
+        padding: 5vw;
+    }
+
+    .price {
+        font-size: 2vh;
+    }
+}

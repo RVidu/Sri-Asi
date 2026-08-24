@@ -1,0 +1,15 @@
+footer {
+    background-color: #333333;
+    height: 6vh;
+    display: flex;
+    justify-content: space-between;
+    opacity: 90%;
+}
+
+a {
+    opacity: 90%;
+    text-decoration: none;
+    margin-top: 2vh;
+    font-size: 2vh;
+    color: #ffffff;
+}
